@@ -1,0 +1,371 @@
+body {
+  margin:0;
+  background-color: #f4e0c5;
+}
+
+/* navigation css styling starts */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height:107px;
+    margin-inline: auto;
+    width:100%;
+    background-color: black;
+    padding:10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header div a {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 50px;
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to bottom,white 0%, bisque 10%, #ffb199 50%, #ff8177 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    cursor: pointer;
+}
+
+header nav {
+    height: 32px;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 15px;
+    background-image: linear-gradient(to bottom,white 0%, bisque 10%, #ffb199 80%, #ff8177 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.topnav a:hover {
+    color:bisque;
+    cursor: pointer;
+  }
+
+
+/* Main container styling  */
+
+.main {background-color: #141414;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    justify-self: center;
+    margin: 0 auto;
+    max-height: 80vh;
+    background-color:#f4e0c5;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    /* margin-inline: auto; */
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    line-height: 30px;
+    padding-bottom: 5rem;
+}
+
+.main__content {
+  color: #fff;
+}
+
+.main__content h1 {
+  font-size: 2.5rem;
+  color: black;
+  line-height: 50px;
+  padding-left: 30px;
+}
+
+.main__content h2{
+  color: black;
+  font-size: 1.2rem;
+  padding-left: 30px;
+}
+
+.main__content p {
+  color: #141414;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+.main__btn {
+  font-size: 0.8rem;
+  background-color: black;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:#ffb199;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  padding-top: 30px;
+  max-height: 600px;
+  max-width: 300px;
+}
+
+
+/* Footer styling */
+
+div footer {
+    background-color: black;
+}
+
+footer nav {
+    background-color: black;
+    max-height: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-flex;
+    width: 100%;
+    justify-content:flex-end; 
+    align-items:center;
+    padding: 20px 0px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.bottomnav a:hover {
+    color:bisque;
+}
+
+div footer section{
+    background-color: black;
+}
+hr{
+    color: bisque;
+    margin: 0%;
+}
+
+div footer section{
+    background-color: black;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* Social Media Icon's styling */
+
+.fa {
+    font-size: 10px;
+    width: 20px; 
+    text-align: center;
+    text-decoration: none;
+    margin: 2.5px;
+    display:inline-flex;
+    justify-content: center;
+    color: bisque;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+
+h6{
+    background-color: black;
+    color: #ffe4c4;
+    font-size: 0.8em;
+    margin: 5px;
+    padding-left: 55rem;
+}
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  min-height:107px;
+  margin-inline: auto;
+  width:100%;
+  background-color: black;
+  padding:10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+ 
+  /* header */
+
+  .header {
+    display:grid;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: fit-content;
+    max-width: 100%;
+  }
+
+  .logo{
+    display:flex;
+    justify-content: flex-start;
+  }
+
+  /* main */
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__container {
+    grid-template-columns: 1fr;
+    max-height: fit-content;
+  }
+
+  .main__content h1 {
+    font: size 70%;
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .main__content h2{
+    font-size: medium;
+    padding: 0;
+  }
+
+  .main__content p {
+    font-size: large;
+    padding: 0;
+  }
+
+  .main__btn {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin-left: 30%;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  #main__img {
+    padding-top: 30px;
+    max-height: 500px;
+    max-width: 300px;
+  }
+
+ /* footer */
+
+  .footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
+
+
+  /* div footer {
+    background-color: black;
+} */
+
+footer nav {
+    font-size: 6px;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+footer nav a {
+    padding-right: 60px;
+}
+
+.bottomnav a:hover {
+    color:bisque;
+}
+
+div footer section{
+    background-color: black;
+}
+hr{
+    color: bisque;
+    margin: 0%;
+}
+
+div footer section{
+    background-color: black;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* Social Media Icon's styling */
+
+.fa {
+    justify-content: space-between;
+  }
+  
+  
+h6{
+    font-size: 0.2em;
+    padding-left: 0;
+}
+
+}
